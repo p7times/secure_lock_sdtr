@@ -17,13 +17,8 @@ Proiect pentru disciplina Sisteme Distribuite și de Timp Real.
 - A doua placă (nodul "cheie")
 - Servo, buton, LED-uri, legătură UART/CAN
 
-## Build
-1. Vivado: `source hw/create_project.tcl`
-2. Exportă `.xsa`, creează platforma în Vitis
-3. Importă sursele din `src/` și rulează pe placă
-
 ## Stadiu
-- [ ] Alegere temă și arhitectură
+- [x] Alegere temă și arhitectură
 - [ ] Task-uri FreeRTOS + coadă
 - [ ] Protocol (cadre, CRC, handshake)
 - [ ] Măsurători de timp real
