@@ -1,10 +1,6 @@
 # zybo-freertos-secure-lock
 
-Sistem distribuit de control al accesului în timp real, pe Zybo Z7 cu FreeRTOS.
-O "încuietoare" și o "cheie" comunică printr-un protocol propriu de tip
-challenge-response (cadre cu CRC, nonce anti-replay, timeout). Un task de timp
-real citește butonul și comandă servo-ul prin PWM, iar un task de comunicație
-gestionează protocolul. Task-urile se sincronizează prin cozi de mesaje și mutex.
+Sistem distribuit de control al accesului în timp real, pe Zybo Z7 (SoC Zynq-7000, ARM Cortex-A9) cu FreeRTOS. O „încuietoare" și o „cheie" comunică prin CAN, folosind un protocol propriu de nivel înalt de tip challenge-response (cadre cu CRC, nonce anti-replay, timeout). Un task de timp real citește butonul și comandă servo-ul prin PWM, iar un task de comunicație gestionează protocolul. Task-urile se sincronizează prin cozi de mesaje și mutex.
 Proiect pentru disciplina Sisteme Distribuite și de Timp Real.
 
 ## Structură
